@@ -80,19 +80,19 @@ function decryptEmail(encoded) {
 }
 
 
-console.log("\n %c Welcome to my homepage! %c https://zto.im/ \n", "color: #ffffff; background: #f1404b; padding:3px 0;", "background: #030307; padding:3px 0;");
+console.log("\n %c Welcome to my homepage! %c https://baidea.com/ \n", "color: #ffffff; background: #f1404b; padding:3px 0;", "background: #030307; padding:3px 0;");
 
 
 console.log(`
 
-         888                d8b               
-         888                Y8P               
-         888                                  
-88888888 888888 .d88b.      888 88888b.d88b.  
-   d88P  888   d88""88b     888 888 "888 "88b 
-  d88P   888   888  888     888 888  888  888 
- d88P    Y88b. Y88..88P d8b 888 888  888  888 
-88888888  "Y888 "Y88P"  Y8P 888 888  888  888 
+888               d8b      888                                                      
+888               Y8P      888                                                      
+888                        888                                                      
+88888b.   8888b.  888  .d88888  .d88b.   8888b.       .d8888b .d88b.  88888b.d88b.  
+888 "88b     "88b 888 d88" 888 d8P  Y8b     "88b     d88P"   d88""88b 888 "888 "88b 
+888  888 .d888888 888 888  888 88888888 .d888888     888     888  888 888  888  888 
+888 d88P 888  888 888 Y88b 888 Y8b.     888  888 d8b Y88b.   Y88..88P 888  888  888 
+88888P"  "Y888888 888  "Y88888  "Y8888  "Y888888 Y8P  "Y8888P "Y88P"  888  888  888                                                                                                                                                                                                                                                          
 
 `);
 
