@@ -1,4 +1,4 @@
-console.log("\n %c HeoMusic 开源静态音乐播放器 %c https://github.com/zhheo/HeoMusic \n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;")
+<!--console.log("\n %c HeoMusic 开源静态音乐播放器 %c https://github.com/zhheo/HeoMusic \n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;")-->
 var local = false;
 
 if (typeof userId === 'undefined') {
@@ -32,12 +32,12 @@ function loadMusicScript() {
   if (typeof localMusic === 'undefined' || !Array.isArray(localMusic) || localMusic.length === 0) {
     // 如果 localMusic 为空数组或未定义，加载 Meting2.min.js
     var script = document.createElement('script');
-    script.src = './js/Meting.js';
+    script.src = 'https://cdn.jsdelivr.net/gh/baidea/homepage-static-loading@3.0.6/music/js/Meting.js';
     document.body.appendChild(script);
   } else {
     // 否则加载 localEngine.js
     var script = document.createElement('script');
-    script.src = './js/localEngine.js';
+    script.src = 'https://cdn.jsdelivr.net/gh/baidea/homepage-static-loading@3.0.5/music/js/localEngine.js';
     document.body.appendChild(script);
     local = true;
   }
@@ -154,7 +154,7 @@ var heo = {
   },
   setMediaMetadata: function (aplayerObj, isSongPlaying) {
     const audio = aplayerObj.list.audios[aplayerObj.list.index]
-    const coverUrl = audio.cover || './img/icon.webp';
+    const coverUrl = audio.cover || 'https://cdn.jsdelivr.net/gh/baidea/homepage-static-loading@3.0.0/assets/img/favicon.ico';
     const currentLrcContent = document.getElementById("heoMusic-page").querySelector(".aplayer-lrc-current").textContent;
     let songName, songArtist;
 
@@ -257,7 +257,7 @@ var heo = {
 
       if (typeof ColorThief === 'undefined') {
         const script = document.createElement('script');
-        script.src = './js/color-thief.min.js';
+        script.src = 'https://cdn.jsdelivr.net/gh/baidea/homepage-static-loading@3.0.5/music/js/color-thief.min.js';
         script.onload = () => updateThemeColor(new ColorThief());
         document.body.appendChild(script);
       } else {
